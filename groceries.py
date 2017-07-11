@@ -1,4 +1,6 @@
 import code
+import operator
+
 
 products = [
 
@@ -28,6 +30,7 @@ print("--------------")
 print("THERE ARE " + str(len(products)) + " PRODUCTS:")
 
 
+products = sorted(products, key=operator.itemgetter("name"))
 
 for product in products:
     print (" + " + product["name"])
