@@ -56,4 +56,8 @@ departments = list(departments)
 print("--------------")
 print("THERE ARE " + str(len(departments)) + " DEPARTMENTS:")
 
+
+for department_name in departments:
+    print (" + " + department_name.title())
+
 #print (departments)
